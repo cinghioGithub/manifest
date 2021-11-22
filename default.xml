@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+        <remote name="github"      fetch="https://github.com" />
+
+        <default remote="github"   revision="main" />
+
+	<project path="HEAAN"      name="n-samar/HEAAN"            revision="master" />
+	<project path="ntl"        name="libntl/ntl"               revision="main" />
+	<project path="googletest" name="google/googletest"        revision="main" />
+	<project path="onnx"       name="onnx/onnx"                revision="main" />
+	<project path="janncy"     name="jbech-linaro/janncy"      revision="janncy-repo" />
+</manifest>
