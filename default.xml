@@ -7,6 +7,8 @@
 
 	<project path="ntl"        name="libntl/ntl"               revision="main" />
 	<project path="googletest" name="google/googletest"        revision="main" />
+	<project path="qemu"       name="qemu/qemu.git"            revision="refs/tags/v6.2.0" clone-depth="1" />
+	<project path="linux"      name="torvalds/linux.git"       revision="refs/tags/v5.16" clone-depth="1" />
 	<project path="build"      name="jbech-linaro/build.git"   revision="fun_sim">
                 <linkfile src="Makefile"       dest="Makefile" />
         </project>
