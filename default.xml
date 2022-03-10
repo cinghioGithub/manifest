@@ -5,6 +5,7 @@
 
         <default remote="github"   revision="master" />
 
+	<project path="busybox"    name="mirror/busybox"           revision="refs/tags/1_35_0" clone-depth="1" />
 	<project path="ntl"        name="libntl/ntl"               revision="main" />
 	<project path="googletest" name="google/googletest"        revision="main" />
 	<project path="qemu"       name="qemu/qemu.git"            revision="refs/tags/v6.2.0" clone-depth="1" />
