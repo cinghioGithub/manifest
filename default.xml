@@ -1,18 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-        <remote name="github" fetch="https://github.com" />
-        <remote name="sri"    fetch="https://gitlab.sri.com/farside/mto-dprive-farside-external-collab" />
+        <remote name="github"     fetch="https://github.com" />
+	<remote name="github-git" fetch="ssh://github.com" />
+        <remote name="sri"        fetch="https://gitlab.sri.com/farside/mto-dprive-farside-external-collab" />
 
-        <default remote="github"   revision="master" />
+        <default remote="github"      revision="master" />
 
-	<project path="busybox"    name="mirror/busybox"           revision="refs/tags/1_35_0" clone-depth="1" />
-	<project path="ntl"        name="libntl/ntl"               revision="main" />
-	<project path="googletest" name="google/googletest"        revision="main" />
-	<project path="qemu"       name="qemu/qemu.git"            revision="refs/tags/v6.2.0" clone-depth="1" />
-	<project path="linux"      name="torvalds/linux.git"       revision="refs/tags/v5.16" clone-depth="1" />
-	<project path="build"      name="jbech-linaro/build.git"   revision="fun_sim">
+        <project path="busybox"       name="mirror/busybox.git"       revision="refs/tags/1_35_0" clone-depth="1" />
+	<!-- Cannot use a private git with repo as it seems: 
+	     https://github.blog/2021-09-01-improving-git-protocol-security-github/
+		<project path="fun_sim_app"   name="b49020/fun_sim_app.git"   revision="main" remote="github-git" />
+	-->
+        <project path="googletest"    name="google/googletest.git"    revision="main" />
+        <project path="linux"         name="torvalds/linux.git"       revision="refs/tags/v5.16" clone-depth="1" />
+        <project path="ntl"           name="libntl/ntl.git"           revision="main" />
+        <project path="qemu"          name="qemu/qemu.git"            revision="refs/tags/v6.2.0" clone-depth="1" />
+        <project path="udmabuf"       name="ikwzm/udmabuf.git"        revision="master" />
+
+        <project path="build"         name="jbech-linaro/build.git"   revision="fun_sim">
                 <linkfile src="Makefile"       dest="Makefile" />
+                <linkfile src="toolchain.mk"   dest="toolchain.mk" />
         </project>
 
-	<project path="fun_sim"    name="fun_sim"                  revision="master" remote="sri" />
+        <project path="fun_sim"    name="fun_sim"                  revision="master" remote="sri" />
 </manifest>
