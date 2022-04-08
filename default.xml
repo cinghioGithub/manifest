@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
         <remote name="github"     fetch="https://github.com" />
-	<remote name="github-git" fetch="ssh://github.com" />
-        <remote name="sri"        fetch="https://gitlab.sri.com/farside/mto-dprive-farside-external-collab" />
+	<remote name="linaro"     fetch="ssh://git@dev-private-git.linaro.org" />
 
         <default remote="github"      revision="master" />
 
         <project path="busybox"       name="mirror/busybox.git"       revision="refs/tags/1_35_0" clone-depth="1" />
-	<!-- Cannot use a private git with repo as it seems: 
-	     https://github.blog/2021-09-01-improving-git-protocol-security-github/
-		<project path="fun_sim_app"   name="b49020/fun_sim_app.git"   revision="main" remote="github-git" />
-	-->
+	<project path="fun_sim_app"   name="sri/fun_sim_app.git"      revision="main" remote="linaro" />
+	<project path="fun_sim"       name="sri/fun_sim.git"          revision="master" remote="linaro" />
         <project path="googletest"    name="google/googletest.git"    revision="main" />
         <project path="linux"         name="torvalds/linux.git"       revision="refs/tags/v5.16" clone-depth="1" />
         <project path="ntl"           name="libntl/ntl.git"           revision="main" />
@@ -21,6 +18,4 @@
                 <linkfile src="Makefile"       dest="Makefile" />
                 <linkfile src="toolchain.mk"   dest="toolchain.mk" />
         </project>
-
-        <project path="fun_sim"    name="fun_sim"                  revision="master" remote="sri" />
 </manifest>
