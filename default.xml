@@ -53,6 +53,7 @@
         <project path="u-boot"                  name="u-boot/u-boot.git" />
 
         <!-- Misc GitLab remotes -->
+        <project path="ci"                      name="Linaro/blueprints/ci.git"                        remote="gitlab" revision="main" />
         <project path="meta-ewaol-machine"      name="soafee/ewaol/meta-ewaol-machine.git"             remote="gitlab" revision="main" />
         <project path="meta-ewaol"              name="soafee/ewaol/meta-ewaol.git"                     remote="gitlab" revision="main" />
         <project path="meta-ledge-secure"       name="Linaro/trustedsubstrate/meta-ledge-secure.git"   remote="gitlab" revision="kirkstone" />
