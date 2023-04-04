@@ -7,7 +7,7 @@
 	<project path="buildroot" name="buildroot/buildroot.git"    revision="refs/tags/2023.02"      clone-depth="1" />
 	<project path="grub2"     name="rhboot/grub2.git"           revision="refs/tags/grub-2.06"    clone-depth="1" />
         <project path="linux"     name="torvalds/linux.git"         revision="refs/tags/v6.2"         clone-depth="1" />
-        <project path="qemu"      name="qemu/qemu.git"              revision="refs/tags/v5.1.0"       clone-depth="1" />
+        <project path="qemu"      name="qemu/qemu.git"              revision="refs/tags/v7.2.0"       clone-depth="1" />
         <project path="u-boot"    name="u-boot/u-boot.git"          revision="refs/tags/v2023.04"     clone-depth="1" />
 
 	<project path="build"     name="jbech-linaro/build.git"     revision="dte">
