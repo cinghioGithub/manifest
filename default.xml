@@ -4,7 +4,6 @@
         <remote name="gitlab"                   fetch="https://gitlab.com" />
         <remote name="savannah"                 fetch="git://git.savannah.gnu.org" />
         <remote name="tf"                       fetch="https://git.trustedfirmware.org" />
-        <remote name="ca"                       fetch="https://source.codeaurora.org/external/imx" />
         <remote name="yocto"                    fetch="https://git.yoctoproject.org" />
         <remote name="oe"                       fetch="https://git.openembedded.org" />
         <remote name="arm"                      fetch="https://git.gitlab.arm.com" />
@@ -64,9 +63,6 @@
         <project path="grub"                    name="grub.git"                                        remote="savannah" />
         <project path="trusted-firmware-m"      name="trusted-firmware-m.git"                          remote="tf" />
         <project path="trusted-firmware-a"      name="TF-A/trusted-firmware-a.git"                     remote="tf" />
-        <project path="imx-mkimage"             name="imx-mkimage.git"                                 remote="ca" revision="refs/tags/rel_imx_5.4.24_2.1.0" />
-        <project path="uboot-imx"               name="uboot-imx.git"                                   remote="ca" />
-        <project path="linux-imx"               name="linux-imx.git"                                   remote="ca" />
         <project path="meta-openembedded"       name="meta-openembedded"                               remote="oe" />
         <project path="poky"                    name="git/poky"                                        remote="yocto" />
         <project path="meta-arm"                name="git/meta-arm"                                    remote="yocto" />
