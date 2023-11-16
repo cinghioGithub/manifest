@@ -14,7 +14,7 @@
         </project>
 
         <!-- linaro-swg gits -->
-        <project path="linux"                name="jbech-linaro/linux.git"                       revision="nxp-sdp" clone-depth="1" />
+        <project path="linux"                name="jbech-linaro/linux.git"                       revision="nxp-sdp-optee-6.6.0" clone-depth="1" />
         <project path="optee_benchmark"      name="linaro-swg/optee_benchmark.git"/>
         <project path="optee_examples"       name="linaro-swg/optee_examples.git" />
 
