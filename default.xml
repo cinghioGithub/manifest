@@ -4,6 +4,7 @@
         <remote name="gitlab"                   fetch="https://gitlab.com" />
         <remote name="savannah"                 fetch="git://git.savannah.gnu.org" />
         <remote name="tf"                       fetch="https://git.trustedfirmware.org" />
+        <remote name="review-tf"                fetch="https://review.trustedfirmware.org" />
         <remote name="yocto"                    fetch="https://git.yoctoproject.org" />
         <remote name="oe"                       fetch="https://git.openembedded.org" />
         <remote name="arm"                      fetch="https://git.gitlab.arm.com" />
@@ -61,7 +62,7 @@
 
         <!-- Misc other remotes -->
         <project path="grub"                    name="grub.git"                                        remote="savannah" />
-        <project path="trusted-firmware-m"      name="trusted-firmware-m.git"                          remote="tf" />
+        <project path="trusted-firmware-m"      name="trusted-firmware-m.git"                          remote="review-tf" />
         <project path="trusted-firmware-a"      name="TF-A/trusted-firmware-a.git"                     remote="tf" />
         <project path="meta-openembedded"       name="meta-openembedded"                               remote="oe" />
         <project path="poky"                    name="git/poky"                                        remote="yocto" />
